@@ -2,7 +2,7 @@
 Contributors: raratheme
 Tags: import, content, demo, data, widgets, settings
 Requires at least: 6.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.4
 Stable tag: 1.3.4
 License: GPLv3 or later
