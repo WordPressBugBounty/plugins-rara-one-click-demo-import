@@ -492,16 +492,25 @@ class RRDI_Helpers {
 		// Variable holding the paths to the uploaded files.
 		$selected_import_files = array();
 
-		// Upload settings to disable form and type testing for AJAX uploads.
+		// Upload settings: skip nonce form check (handled by the AJAX referer) but keep
+		// file-type validation on and constrain it to the formats the importer consumes.
 		$upload_overrides = array(
 			'test_form' => false,
-			'test_type' => false,
+			'test_type' => true,
+			'mimes'     => array(
+				'xml'  => 'text/xml',
+				'wxr'  => 'text/xml',
+				'json' => 'application/json',
+				'wie'  => 'application/octet-stream',
+				'dat'  => 'application/octet-stream',
+			),
 		);
 
-		// Handle demo content and widgets file upload.
-		$content_file_info     = wp_handle_upload( $_FILES['content_file'], $upload_overrides );
-		$widget_file_info      = wp_handle_upload( $_FILES['widget_file'], $upload_overrides );
-		$customizer_file_info  = wp_handle_upload( $_FILES['customizer_file'], $upload_overrides );
+		// Handle demo content and widgets file upload. test_type + mimes reject any
+		// disallowed extension; isset guards avoid an undefined-index on missing params.
+		$content_file_info     = isset( $_FILES['content_file'] )    ? wp_handle_upload( $_FILES['content_file'], $upload_overrides )    : array( 'error' => __( 'No content file uploaded.', 'rara-one-click-demo-import' ) );
+		$widget_file_info      = isset( $_FILES['widget_file'] )     ? wp_handle_upload( $_FILES['widget_file'], $upload_overrides )     : array( 'error' => __( 'No widget file uploaded.', 'rara-one-click-demo-import' ) );
+		$customizer_file_info  = isset( $_FILES['customizer_file'] ) ? wp_handle_upload( $_FILES['customizer_file'], $upload_overrides ) : array( 'error' => __( 'No customizer file uploaded.', 'rara-one-click-demo-import' ) );
 
 		if ( empty( $content_file_info['file'] ) || isset( $content_file_info['error'] ) ) {
 

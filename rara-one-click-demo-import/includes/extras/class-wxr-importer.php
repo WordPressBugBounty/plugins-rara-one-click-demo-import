@@ -55,6 +55,7 @@ class RDDI_WXR_Importer {
 
 	protected $url_remap = array();
 	protected $featured_images = array();
+	protected $options = array();
 
 	/**
 	 * Logger instance.

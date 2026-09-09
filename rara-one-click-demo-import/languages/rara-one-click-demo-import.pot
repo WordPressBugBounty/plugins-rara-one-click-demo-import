@@ -1,69 +1,87 @@
-# Copyright (C) 2023 raratheme
+# Copyright (C) 2026 raratheme
 # This file is distributed under the GPL3.
 msgid ""
 msgstr ""
-"Project-Id-Version: RARA One Click Demo Import 1.3.3\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-31 04:49:37+00:00\n"
+"Project-Id-Version: RARA One Click Demo Import 1.3.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rara-one-click-demo-import\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
-"Last-Translator: WP Travel Engine\n"
-"Language-Team: \n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
-"Language: en_US\n"
-"X-Poedit-SearchPath-0: ../../rara-one-click-demo-import\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: grunt-wp-i18n 1.0.3\n"
+"POT-Creation-Date: 2026-09-09T05:51:42+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: rara-one-click-demo-import\n"
+
+#. Plugin Name of the plugin
+#: rara-one-click-demo-import.php
+msgid "RARA One Click Demo Import"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: rara-one-click-demo-import.php
+msgid "https://wordpress.org/plugins/rara-one-click-demo-import/"
+msgstr ""
+
+#. Description of the plugin
+#: rara-one-click-demo-import.php
+msgid "Import demo content, widgets and settings of themes made by RaraTheme with just one click."
+msgstr ""
+
+#. Author of the plugin
+#: rara-one-click-demo-import.php
+msgid "raratheme"
+msgstr ""
+
+#. Author URI of the plugin
+#: rara-one-click-demo-import.php
+msgid "https://www.rarathemes.com"
+msgstr ""
 
 #: includes/class-rrdi-helpers.php:70
+#, php-format
 msgid "\"import_file_url\" or \"local_import_file\" for %s%s%s are not defined!"
 msgstr ""
 
 #: includes/class-rrdi-helpers.php:176
+#, php-format
 msgid "URL for %s%s%s file is not defined!"
 msgstr ""
 
 #: includes/class-rrdi-helpers.php:198
-msgid ""
-"An error occurred while fetching %s%s%s file from the server!%sReason: %s - "
-"%s."
+#, php-format
+msgid "An error occurred while fetching %s%s%s file from the server!%sReason: %s - %s."
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:238 includes/class-rrdi-helpers.php:282
-msgid ""
-"An error occurred while writing file to your server! Tried to write a file "
-"to: %s%s."
+#: includes/class-rrdi-helpers.php:238
+#: includes/class-rrdi-helpers.php:282
+#, php-format
+msgid "An error occurred while writing file to your server! Tried to write a file to: %s%s."
 msgstr ""
 
 #: includes/class-rrdi-helpers.php:317
-msgid ""
-"An error occurred while reading a file from your server! Tried reading file "
-"from path: %s%s."
+#, php-format
+msgid "An error occurred while reading a file from your server! Tried reading file from path: %s%s."
 msgstr ""
 
 #: includes/class-rrdi-helpers.php:341
-msgid ""
-"This WordPress page does not have %sdirect%s write file access. This plugin "
-"needs it in order to save the demo import xml file to the upload directory "
-"of your site. You can change this setting with these instructions: %s."
+#, php-format
+msgid "This WordPress page does not have %sdirect%s write file access. This plugin needs it in order to save the demo import xml file to the upload directory of your site. You can change this setting with these instructions: %s."
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:352 includes/class-rrdi-main.php:180
+#: includes/class-rrdi-helpers.php:352
+#: includes/class-rrdi-main.php:180
 msgid "Rara One Click Demo Import"
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:353 includes/class-rrdi-main.php:181
+#: includes/class-rrdi-helpers.php:353
+#: includes/class-rrdi-main.php:181
 msgid "Rara Demo Import"
 msgstr ""
 
 #: includes/class-rrdi-helpers.php:365
-msgid ""
-"An error occurred while retrieving reading/writing permissions to your "
-"server (could not retrieve WP filesystem credentials)!"
+msgid "An error occurred while retrieving reading/writing permissions to your server (could not retrieve WP filesystem credentials)!"
 msgstr ""
 
 #: includes/class-rrdi-helpers.php:373
@@ -75,55 +93,65 @@ msgid "Rara One Click Demo Import - "
 msgstr ""
 
 #: includes/class-rrdi-helpers.php:474
-msgid ""
-"%sYour user role isn't high enough. You don't have permission to import "
-"demo data.%s"
+#, php-format
+msgid "%sYour user role isn't high enough. You don't have permission to import demo data.%s"
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:510
-msgid ""
-"Please upload XML file for content import. If you want to import widgets or "
-"customizer settings only, please use Widget Importer & Exporter or the "
-"Customizer Export/Import plugin."
+#: includes/class-rrdi-helpers.php:511
+msgid "No content file uploaded."
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:512 includes/class-rrdi-helpers.php:534
-#: includes/class-rrdi-helpers.php:553 includes/class-rrdi-helpers.php:561
+#: includes/class-rrdi-helpers.php:512
+msgid "No widget file uploaded."
+msgstr ""
+
+#: includes/class-rrdi-helpers.php:513
+msgid "No customizer file uploaded."
+msgstr ""
+
+#: includes/class-rrdi-helpers.php:519
+msgid "Please upload XML file for content import. If you want to import widgets or customizer settings only, please use Widget Importer & Exporter or the Customizer Export/Import plugin."
+msgstr ""
+
+#: includes/class-rrdi-helpers.php:521
+#: includes/class-rrdi-helpers.php:543
+#: includes/class-rrdi-helpers.php:562
+#: includes/class-rrdi-helpers.php:570
 msgid "Upload files"
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:530
+#: includes/class-rrdi-helpers.php:539
+#, php-format
 msgid "Widget file was not uploaded. Error: %s"
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:549
+#: includes/class-rrdi-helpers.php:558
+#, php-format
 msgid "Customizer file was not uploaded. Error: %s"
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:559
+#: includes/class-rrdi-helpers.php:568
 msgid "The import files were successfully uploaded!"
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:577
+#: includes/class-rrdi-helpers.php:586
+#, php-format
 msgid "Initial max execution time = %s"
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:581
-msgid ""
-"Files info:%1$sSite URL = %2$s%1$sData file = %3$s%1$sWidget file = "
-"%4$s%1$sCustomizer file = %5$s"
+#: includes/class-rrdi-helpers.php:590
+#, php-format
+msgid "Files info:%1$sSite URL = %2$s%1$sData file = %3$s%1$sWidget file = %4$s%1$sCustomizer file = %5$s"
 msgstr ""
 
-#: includes/class-rrdi-helpers.php:585 includes/class-rrdi-helpers.php:586
+#: includes/class-rrdi-helpers.php:594
+#: includes/class-rrdi-helpers.php:595
 msgid "not defined!"
 msgstr ""
 
 #: includes/class-rrdi-init.php:23
-msgid ""
-"The %2$sRara One Click Demo Import%3$s plugin requires %2$sPHP 5.3.2+%3$s "
-"to run properly. Please contact your hosting company and ask them to update "
-"the PHP version of your site to at least PHP 5.3.2.%4$s Your current "
-"version of PHP: %2$s%1$s%3$s"
+#, php-format
+msgid "The %2$sRara One Click Demo Import%3$s plugin requires %2$sPHP 5.3.2+%3$s to run properly. Please contact your hosting company and ask them to update the PHP version of your site to at least PHP 5.3.2.%4$s Your current version of PHP: %2$s%1$s%3$s"
 msgstr ""
 
 #: includes/class-rrdi-main.php:210
@@ -131,6 +159,7 @@ msgid "Sorry, you are not allowed to install demo on this site."
 msgstr ""
 
 #: includes/class-rrdi-main.php:217
+#, php-format
 msgid "Installing Demo from uploaded file: %s"
 msgstr ""
 
@@ -146,7 +175,8 @@ msgstr ""
 msgid "rara"
 msgstr ""
 
-#: includes/class-rrdi-main.php:391 includes/settings/installed-demos.php:184
+#: includes/class-rrdi-main.php:391
+#: includes/settings/installed-demos.php:184
 msgid "No preview image defined for this import."
 msgstr ""
 
@@ -154,11 +184,13 @@ msgstr ""
 msgid "Manually uploaded files"
 msgstr ""
 
-#: includes/class-rrdi-main.php:463 includes/class-rrdi-main.php:474
+#: includes/class-rrdi-main.php:463
+#: includes/class-rrdi-main.php:474
 msgid "Downloaded files"
 msgstr ""
 
 #: includes/class-rrdi-main.php:470
+#, php-format
 msgid "The import files for: %s were successfully downloaded!"
 msgstr ""
 
@@ -167,17 +199,13 @@ msgid "No import files specified!"
 msgstr ""
 
 #: includes/class-rrdi-main.php:526
-msgid ""
-"%1$s%3$sCompleted Successfully!%4$s%2$sThe process has finished. Please "
-"check your page and make sure that everything has been imported correctly. "
-"If you want, you can now deactivate the %3$sRara One Click Demo Import%4$s "
-"plugin.%5$s"
+#, php-format
+msgid "%1$s%3$sCompleted Successfully!%4$s%2$sThe process has finished. Please check your page and make sure that everything has been imported correctly. If you want, you can now deactivate the %3$sRara One Click Demo Import%4$s plugin.%5$s"
 msgstr ""
 
 #: includes/class-rrdi-main.php:536
-msgid ""
-"%1$sUnfortunately, demo import has finished with some errors.%2$sMore "
-"details about the errors can be found in this %3$s%5$slog file%6$s%4$s%7$s"
+#, php-format
+msgid "%1$sUnfortunately, demo import has finished with some errors.%2$sMore details about the errors can be found in this %3$s%5$slog file%6$s%4$s%7$s"
 msgstr ""
 
 #: includes/class-rrdi-main.php:593
@@ -188,11 +216,13 @@ msgstr ""
 msgid "Importing content"
 msgstr ""
 
-#: includes/class-rrdi-main.php:634 includes/class-rrdi-main.php:646
+#: includes/class-rrdi-main.php:634
+#: includes/class-rrdi-main.php:646
 msgid "Importing widgets"
 msgstr ""
 
-#: includes/class-rrdi-main.php:668 includes/class-rrdi-main.php:676
+#: includes/class-rrdi-main.php:668
+#: includes/class-rrdi-main.php:676
 msgid "Importing customizer settings"
 msgstr ""
 
@@ -204,150 +234,174 @@ msgstr ""
 msgid "Completed AJAX call number: "
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:130
+#: includes/extras/class-wxr-importer.php:131
 msgid "Could not open the file for parsing"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:166
-#: includes/extras/class-wxr-importer.php:282
-#: includes/extras/class-wxr-importer.php:355
-msgid ""
-"This WXR file (version %s) is newer than the importer (version %s) and may "
-"not be supported. Please consider updating."
+#: includes/extras/class-wxr-importer.php:167
+#: includes/extras/class-wxr-importer.php:283
+#: includes/extras/class-wxr-importer.php:356
+#, php-format
+msgid "This WXR file (version %s) is newer than the importer (version %s) and may not be supported. Please consider updating."
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:504
+#: includes/extras/class-wxr-importer.php:505
 msgid "The file does not exist, please try again."
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:564
+#: includes/extras/class-wxr-importer.php:565
 msgid "Invalid author mapping"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:665
+#: includes/extras/class-wxr-importer.php:666
 msgid "Cannot import auto-draft posts"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:753
+#: includes/extras/class-wxr-importer.php:754
+#, php-format
 msgid "Failed to import \"%s\": Invalid post type %s"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:763
+#: includes/extras/class-wxr-importer.php:764
+#, php-format
 msgid "%s \"%s\" already exists."
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:841
+#: includes/extras/class-wxr-importer.php:842
+#, php-format
 msgid "Skipping attachment \"%s\", fetching attachments disabled"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:855
+#: includes/extras/class-wxr-importer.php:856
+#, php-format
 msgid "Failed to import \"%s\" (%s)"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:887
-#: includes/extras/class-wxr-importer.php:1705
+#: includes/extras/class-wxr-importer.php:888
+#: includes/extras/class-wxr-importer.php:1706
+#, php-format
 msgid "Imported \"%s\" (%s)"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:892
+#: includes/extras/class-wxr-importer.php:893
+#, php-format
 msgid "Post %d remapped to %d"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1036
+#: includes/extras/class-wxr-importer.php:1037
 msgid "Invalid file type"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1519
+#: includes/extras/class-wxr-importer.php:1520
+#, php-format
 msgid "Failed to import user \"%s\""
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1540
+#: includes/extras/class-wxr-importer.php:1541
+#, php-format
 msgid "Imported user \"%s\""
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1544
+#: includes/extras/class-wxr-importer.php:1545
+#, php-format
 msgid "User %d remapped to %d"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1681
+#: includes/extras/class-wxr-importer.php:1682
+#, php-format
 msgid "Failed to import %s %s"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1710
+#: includes/extras/class-wxr-importer.php:1711
+#, php-format
 msgid "Term %d remapped to %d"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1763
+#: includes/extras/class-wxr-importer.php:1764
+#, php-format
 msgid "Remote server returned %1$d %2$s for %3$s"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1776
+#: includes/extras/class-wxr-importer.php:1777
 msgid "Remote file is incorrect size"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1781
+#: includes/extras/class-wxr-importer.php:1782
 msgid "Zero size file downloaded"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1787
+#: includes/extras/class-wxr-importer.php:1788
+#, php-format
 msgid "Remote file is too large, limit is %s"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1809
+#: includes/extras/class-wxr-importer.php:1810
+#, php-format
 msgid "Running post-processing for post %d"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1822
+#: includes/extras/class-wxr-importer.php:1823
+#, php-format
 msgid "Could not find the post parent for \"%s\" (post #%d)"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1827
+#: includes/extras/class-wxr-importer.php:1828
+#, php-format
 msgid "Post %d was imported with parent %d, but could not be found"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1841
+#: includes/extras/class-wxr-importer.php:1842
+#, php-format
 msgid "Could not find the author for \"%s\" (post #%d)"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1846
+#: includes/extras/class-wxr-importer.php:1847
+#, php-format
 msgid "Post %d was imported with author \"%s\", but could not be found"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1872
+#: includes/extras/class-wxr-importer.php:1873
+#, php-format
 msgid "Post %d was marked for post-processing, but none was required."
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1883
+#: includes/extras/class-wxr-importer.php:1884
+#, php-format
 msgid "Could not update \"%s\" (post #%d) with mapped data"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1928
+#: includes/extras/class-wxr-importer.php:1929
+#, php-format
 msgid "Could not find the menu object for \"%s\" (post #%d)"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1933
-msgid ""
-"Post %d was imported with object \"%d\" of type \"%s\", but could not be "
-"found"
+#: includes/extras/class-wxr-importer.php:1934
+#, php-format
+msgid "Post %d was imported with object \"%d\" of type \"%s\", but could not be found"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1955
+#: includes/extras/class-wxr-importer.php:1956
+#, php-format
 msgid "Could not find the comment parent for comment #%d"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1959
+#: includes/extras/class-wxr-importer.php:1960
+#, php-format
 msgid "Comment %d was imported with parent %d, but could not be found"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1973
+#: includes/extras/class-wxr-importer.php:1974
+#, php-format
 msgid "Could not find the author for comment #%d"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1977
+#: includes/extras/class-wxr-importer.php:1978
+#, php-format
 msgid "Comment %d was imported with author %d, but could not be found"
 msgstr ""
 
-#: includes/extras/class-wxr-importer.php:1994
+#: includes/extras/class-wxr-importer.php:1995
+#, php-format
 msgid "Could not update comment #%d with mapped data"
 msgstr ""
 
@@ -356,16 +410,13 @@ msgid "Before you begin, make sure all the required plugins are activated."
 msgstr ""
 
 #: includes/settings/installed-demos.php:12
-msgid ""
-"%1$sWarning: your server is using %2$sPHP safe mode%3$s. This means that "
-"you might experience server timeout errors.%4$s"
+#, php-format
+msgid "%1$sWarning: your server is using %2$sPHP safe mode%3$s. This means that you might experience server timeout errors.%4$s"
 msgstr ""
 
 #: includes/settings/installed-demos.php:34
-msgid ""
-"If you are using premium themes by %1$s, just click Import Now button "
-"below. Alternatively, you can download zip files from the %2$s page of your "
-"theme and upload it as mentioned in Demo Import tab. As simple as that."
+#, php-format
+msgid "If you are using premium themes by %1$s, just click Import Now button below. Alternatively, you can download zip files from the %2$s page of your theme and upload it as mentioned in Demo Import tab. As simple as that."
 msgstr ""
 
 #: includes/settings/installed-demos.php:48
@@ -397,23 +448,20 @@ msgid "Settings"
 msgstr ""
 
 #: includes/settings/installed-demos.php:63
-msgid ""
-"Note: To import demo content for the free themes, please follow the "
-"step-by-step instructions mentioned in the %1$s Demo Import %2$s tab."
+#, php-format
+msgid "Note: To import demo content for the free themes, please follow the step-by-step instructions mentioned in the %1$s Demo Import %2$s tab."
 msgstr ""
 
-#: includes/settings/installed-demos.php:71 includes/settings/intro.php:23
+#: includes/settings/installed-demos.php:71
+#: includes/settings/intro.php:23
 #: includes/settings/welcome.php:42
-msgid ""
-"Note: We highly recommend to import the demo content on a fresh WordPress "
-"installation. You can reset your website to a fresh WordPress installation "
-"using a reset plugin like %1$s."
+#, php-format
+msgid "Note: We highly recommend to import the demo content on a fresh WordPress installation. You can reset your website to a fresh WordPress installation using a reset plugin like %1$s."
 msgstr ""
 
 #: includes/settings/installed-demos.php:107
-msgid ""
-"Note: For free themes, always upload the appropriate demo zip file from "
-"%1$s Demo Import %2$s tab and import demo data as mentioned there."
+#, php-format
+msgid "Note: For free themes, always upload the appropriate demo zip file from %1$s Demo Import %2$s tab and import demo data as mentioned there."
 msgstr ""
 
 #: includes/settings/installed-demos.php:154
@@ -429,9 +477,7 @@ msgid "Import Now"
 msgstr ""
 
 #: includes/settings/installed-demos.php:229
-msgid ""
-"Click the button to begin the importing process. Please be patient, the "
-"process might take a few minutes."
+msgid "Click the button to begin the importing process. Please be patient, the process might take a few minutes."
 msgstr ""
 
 #: includes/settings/installed-demos.php:233
@@ -439,24 +485,17 @@ msgid "Importing now, please wait!"
 msgstr ""
 
 #: includes/settings/intro.php:15
-msgid ""
-"Please request your hosting to give you the above configuration and then "
-"try the demo import again. If you are constantly having an issue with the "
-"hosting, you may want to consider to move to better WordPress hosting. We "
-"have reviewed %1$s. If the issue is not fixed after the above "
-"configuration, please let us know for the further assistance."
+#, php-format
+msgid "Please request your hosting to give you the above configuration and then try the demo import again. If you are constantly having an issue with the hosting, you may want to consider to move to better WordPress hosting. We have reviewed %1$s. If the issue is not fixed after the above configuration, please let us know for the further assistance."
 msgstr ""
 
 #: includes/settings/intro.php:19
-msgid ""
-"You can check the PHP configuartion of your site by using any plugins like "
-"%1$s."
+#, php-format
+msgid "You can check the PHP configuartion of your site by using any plugins like %1$s."
 msgstr ""
 
 #: includes/settings/welcome.php:2
-msgid ""
-"If you have a demo pack in a .zip format, you may install it by uploading "
-"it here."
+msgid "If you have a demo pack in a .zip format, you may install it by uploading it here."
 msgstr ""
 
 #: includes/settings/welcome.php:5
@@ -472,126 +511,21 @@ msgid "A Step-by-Step Guide to Import the Demo Content"
 msgstr ""
 
 #: includes/settings/welcome.php:18
-msgid ""
-"Download the demo file from your theme %1$s page. If you are unable to "
-"download the demo file, please %2$s."
+#, php-format
+msgid "Download the demo file from your theme %1$s page. If you are unable to download the demo file, please %2$s."
 msgstr ""
 
 #: includes/settings/welcome.php:34
+#, php-format
 msgid "Click on the %1$sUpload Demo File%2$s button above."
 msgstr ""
 
 #: includes/settings/welcome.php:37
-msgid ""
-"Click on %1$sChoose File%2$s button and upload the demo file downloaded in "
-"step 1. Then, click on the %3$sInstall Now%4$s button."
+#, php-format
+msgid "Click on %1$sChoose File%2$s button and upload the demo file downloaded in step 1. Then, click on the %3$sInstall Now%4$s button."
 msgstr ""
 
 #: includes/settings/welcome.php:38
-msgid ""
-"Click on the %1$sImport Demo Now!%2$s button to begin demo installation. It "
-"will take few minutes to successfully import the demo."
-msgstr ""
-
-#: includes/vendor/class-demo-installer-skin.php:44
-#: includes/vendor/class-demo-installer-skin.php:46
-msgid "Return to Demo Importer"
-msgstr ""
-
-#: includes/vendor/class-demo-installer-skin.php:48
-msgid "Return to Demos page"
-msgstr ""
-
-#: includes/vendor/class-demo-upgrader.php:40
-msgid "Install package not available."
-msgstr ""
-
-#: includes/vendor/class-demo-upgrader.php:46
-msgid "The demo contains no files."
-msgstr ""
-
-#: includes/vendor/class-demo-upgrader.php:50
-msgid "Click the button below to begin the import process."
-msgstr ""
-
-#: includes/vendor/class-demo-upgrader.php:50
-msgid "Import Demo Now!"
-msgstr ""
-
-#: includes/vendor/class-demo-upgrader.php:133
-msgid "No valid demos were found."
-msgstr ""
-
-#: includes/vendor/class-rrdi-customizer-importer.php:36
-msgid "The customizer import file is missing! File path: %s"
-msgstr ""
-
-#: includes/vendor/class-rrdi-customizer-importer.php:55
-msgid ""
-"No correct file format. Please make sure to use the correct customizer "
-"import file."
-msgstr ""
-
-#: includes/vendor/class-rrdi-customizer-importer.php:61
-msgid ""
-"The customizer import file is not suitable for current theme. You can only "
-"import customizer settings for the same theme or a child theme."
-msgstr ""
-
-#: includes/vendor/class-rrdi-widget-importer.php:44
-msgid "Widget import file could not be found."
-msgstr ""
-
-#: includes/vendor/class-rrdi-widget-importer.php:76
-msgid "Widget import data could not be read. Please try a different file."
-msgstr ""
-
-#: includes/vendor/class-rrdi-widget-importer.php:116
-msgid "Sidebar does not exist in theme (moving widget to Inactive)"
-msgstr ""
-
-#: includes/vendor/class-rrdi-widget-importer.php:138
-msgid "Site does not support widget"
-msgstr ""
-
-#: includes/vendor/class-rrdi-widget-importer.php:173
-msgid "Widget already exists"
-msgstr ""
-
-#: includes/vendor/class-rrdi-widget-importer.php:232
-msgid "Imported"
-msgstr ""
-
-#: includes/vendor/class-rrdi-widget-importer.php:236
-msgid "Imported to Inactive"
-msgstr ""
-
-#: includes/vendor/class-rrdi-widget-importer.php:242
-msgid "No Title"
-msgstr ""
-
-#: includes/vendor/class-rrdi-widget-importer.php:291
-msgid "No results for widget import!"
-msgstr ""
-
-#. Plugin Name of the plugin/theme
-msgid "RARA One Click Demo Import"
-msgstr ""
-
-#. Plugin URI of the plugin/theme
-msgid "https://wordpress.org/plugins/rara-one-click-demo-import/"
-msgstr ""
-
-#. Description of the plugin/theme
-msgid ""
-"Import demo content, widgets and settings of themes made by RaraTheme with "
-"just one click."
-msgstr ""
-
-#. Author of the plugin/theme
-msgid "raratheme"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://www.rarathemes.com"
+#, php-format
+msgid "Click on the %1$sImport Demo Now!%2$s button to begin demo installation. It will take few minutes to successfully import the demo."
 msgstr ""
